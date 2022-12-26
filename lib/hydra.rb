@@ -5,7 +5,7 @@ class Hydra
   def initialize(name, color)
     @name = name
     @color = color
-    heads = [Head.new]
+    @heads = [Head.new(color.to_s)]
   end
 
   def regenerate(head)
